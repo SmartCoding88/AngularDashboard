@@ -33,8 +33,11 @@ route.get("/:id", (req, res) => {
 route.post("/", (req, res) => {
   let categoryInfo = req.body
   category.create({
-    categoryName: categoryInfo.categoryName,
-    updated: Date.now()
+    name: categoryInfo.name,
+    slug: categoryInfo.slug,
+    parent_id: categoryInfo.parent_id,
+    description: categoryInfo.description,
+    image: categoryInfo.image
   })
     .then((category) => {
       console.log("Created category: ", category);
