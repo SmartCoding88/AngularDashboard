@@ -3,6 +3,9 @@ const mongoose = require('mongoose')
 const path = require('path')
 const cors = require('cors')
 
+//APIs
+const usersApi = require("./server/routes/user.route")
+
 //use process.env.... <npm i  dotenv>
 const dotenv = require('dotenv')
 dotenv.config()
@@ -28,3 +31,6 @@ mongoose.connect(
 }).catch((err)=>{
   console.log(`Connection failed ${err}`)
 })
+
+//use users API
+app.use("/users", usersApi)
