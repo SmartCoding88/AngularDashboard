@@ -714,10 +714,10 @@ dt {
 ===================*/
 /*!
  * Waves v0.7.6
- * http://fian.my.id/Waves 
- * 
- * Copyright 2014-2018 Alfiana E. Sibuea and other contributors 
- * Released under the MIT license 
+ * http://fian.my.id/Waves
+ *
+ * Copyright 2014-2018 Alfiana E. Sibuea and other contributors
+ * Released under the MIT license
  * https://github.com/fians/Waves/blob/master/LICENSE */
 .waves-effect {
   position: relative;
@@ -869,6 +869,9 @@ dt {
   top: 0;
   z-index: 999;
 }
+.topbar-full{
+  z-index: 999;
+}
 
 .topbar .topbar-left {
   background-color: #30419b;
@@ -893,12 +896,21 @@ dt {
   display: none;
 }
 
-.topbar .navbar-custom {
+.topbar .navbar-custom{
   background-color: #30419b;
   border-radius: 0;
   margin-bottom: 0;
   padding: 0 10px 0 0;
   margin-left: 240px;
+  min-height: 70px;
+  -webkit-box-shadow: 1px 0 5px rgba(0, 0, 0, 0.05);
+          box-shadow: 1px 0 5px rgba(0, 0, 0, 0.05);
+}
+.topbar-full .navbar-custom {
+  background-color: #30419b;
+  border-radius: 0;
+  margin-bottom: 0;
+  padding: 0 10px 0 0;
   min-height: 70px;
   -webkit-box-shadow: 1px 0 5px rgba(0, 0, 0, 0.05);
           box-shadow: 1px 0 5px rgba(0, 0, 0, 0.05);
