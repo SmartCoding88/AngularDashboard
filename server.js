@@ -5,6 +5,7 @@ const cors = require('cors')
 
 //APIs
 const usersApi = require("./server/routes/user.route")
+const categoriesApi = require('./server/routes/category.route')
 
 //use process.env.... <npm i  dotenv>
 const dotenv = require('dotenv')
@@ -34,3 +35,5 @@ mongoose.connect(
 
 //use users API
 app.use("/users", usersApi)
+//use users API
+app.use("/categories", categoriesApi)
